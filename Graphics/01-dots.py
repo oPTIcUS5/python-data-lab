@@ -45,13 +45,37 @@ print(type(y_points))
 
 # line and dots
 plt.plot(x_points, y_points, marker='o', linestyle='dotted', color='r')
+plt.show()
 # 'o' point
 # '*' star
 # '.' point
 # 'X' x filled
 # '1' tri up
+
+# linestyle dashed
+plt.plot(x_points, y_points, marker='o', linestyle='dashed', color='r')
+plt.show()
+
+# default x points 0, 1, 2, 3...
+plt.plot(y_points, marker='o', linestyle='dashed', color='r')
 plt.show()
 
 # dots
+# marker='' type of dot
 plt.scatter(x_points, y_points, marker='o')
+plt.show()
+
+# marker o, linestyle dashed, color green
+plt.plot(x_points, y_points, 'o--g')
+plt.show()
+
+plt.plot(x_points, y_points, '*--c', ms=15, mec='k')
+plt.show()
+
+plt.xlabel("marker=o, linestyle=dashed, markersize=15, markeredgecolor=blue, markerfacecolor=red")
+plt.plot(x_points, y_points, 'o--c', ms=15, mec='b', mfc='r')
+plt.show()
+
+
+plt.plot(x_points, y_points, 'o--c', ms=15, mec='b', mfc='r', lw='20.5')
 plt.show()
