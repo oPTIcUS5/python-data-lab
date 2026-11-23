@@ -43,5 +43,15 @@ for j in range(len(random_matrix)):
 y_points = np.array(y_points)
 print(type(y_points))
 
-plt.plot(x_points, y_points, marker='o')
+# line and dots
+plt.plot(x_points, y_points, marker='o', linestyle='dotted', color='r')
+# 'o' point
+# '*' star
+# '.' point
+# 'X' x filled
+# '1' tri up
+plt.show()
+
+# dots
+plt.scatter(x_points, y_points, marker='o')
 plt.show()
